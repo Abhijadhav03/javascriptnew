@@ -18,4 +18,13 @@ form.addEventListener('submit', function (e) {
     //show the result
     results.innerHTML = `<span>${bmi}</span>`;
   }
+  if(results <= 18.6){
+    comments.innerHTML = "you are underweight. eat more!";
+  }
+  else if(results >= 18.6 || results <= 24.6){
+    comments.innerHTML = "chill you are in normal weight";
+  }
+  else if(results >=24.6){
+  comments.innerHTML = "hit the gym buddy.";
+  }
 });
